@@ -31,17 +31,43 @@
  * @param {unary operators}
  */
 // postfix operators
+// a++ b++ c-- d--
 let a = 3; //4 //5 //4 
 let b = 2; //3 //4
 let result = a++ + a++ + b++ - a-- + b++;
 3 + 4 + 2 - 5 + 3
-console.log(result);
+
+// console.log(result);
 
 // prefix operators
+// ++a ++b --c --d
 let c = 3; //4 // 5 //4
 let d = 2; //3 //4
 let result1 = ++c + ++c + ++d - --c + ++d;
 // 4+5+3-4+4
-console.log(result1);
+// console.log(result1);
+
+/**
+ * @param {if your country population split in half, and each half contain half values, how many people would live in each half?}
+ */
+let myCountryPopulation = 250000000;
+let halfPopulation = myCountryPopulation / 2;
+console.log(halfPopulation);
+
+/**
+ * @param {add one to its half population}
+ */
+
+let increasePopulationByOne = ++halfPopulation;
+console.log(increasePopulationByOne);
+
+let a1 = 10; //11 //12
+let b1 = 10; //9 //10
+console.log(a1++ + a1++ * --b1 + b1++ + a1);
+// 10 + 11 * 9 + 9 + 12
+// 10 + 99 + 9 +12
+// 109 + 9 + 12
+// 118 + 12
+// 130
 
 
