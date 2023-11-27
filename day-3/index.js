@@ -70,4 +70,11 @@ console.log(a1++ + a1++ * --b1 + b1++ + a1);
 // 118 + 12
 // 130
 
+let number1 = 10 // 11
+console.log(number1++);
+// console.log(number1);
+let number2 = 10
+++number2
+console.log(number2);
+
 
