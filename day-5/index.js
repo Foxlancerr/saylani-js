@@ -29,3 +29,18 @@ function evenOdd() {
     }
 }
 
+// percentage Calculations
+
+let percentage = + prompt("Please Enter a percentage");
+function percentageDisplay() {
+    if (percentage >= 90 && percentage <= 100) {
+        console.log("Grade A+");
+    } else if (percentage >= 70 && percentage <= 90) {
+        console.log("Grade B");
+    } else if (percentage >= 50 && percentage <= 70) {
+        console.log("Grade C");
+    } else {
+        console.log("Fail");
+    }
+}
+percentageDisplay()
