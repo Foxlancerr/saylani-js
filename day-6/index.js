@@ -43,12 +43,12 @@
 
 /**
  * true && true && true && true   will return the last true value
- * true && true && true && true   will stop at first falsy value and return the first falsy value
+ * true && null && 0 && true   will stop at first falsy value and return the first falsy value
  * true || true || true || true   will return the last true value
  */
 
-// console.log("object" && true && true && "54");
-// console.log("" && false && false && "kamran" && true);
+console.log("object" && true && true && "54");
+console.log("" && false && false && "kamran" && true);
 
 
 /**
@@ -57,18 +57,18 @@
  * false || true || true || false   will stop at first truety value and return the first falsy value
  */
 
-// console.log("object" || true || true || "54");
-// console.log("" || false || false || "kamran" || true);
+console.log("object" || true || true || "54");
+console.log("" || false || false || "kamran" || true);
 
 let height = 5.8
 let edu = 14
 
-if(height >= 5.8){
-    if(edu == 16){
-        console.log("you are eligible for commission");
-    }else{
-        console.log("you are eligible for soldier");
-    }
-}else{
-    console.log("you can't do anything");
-}
+// if(height >= 5.8){
+//     if(edu == 16){
+//         console.log("you are eligible for commission");
+//     }else{
+//         console.log("you are eligible for soldier");
+//     }
+// }else{
+//     console.log("you can't do anything");
+// }
