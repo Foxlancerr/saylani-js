@@ -18,6 +18,11 @@
  * @param { string to number conversion }
  */
 
-let num = "45";
-console.log(typeof +num)
-console.log(typeof Number(45))
+let num2 = "45";
+let num3 = "45j";
+let num1 = "j45";
+console.log(+num2)
+console.log(parseFloat(num2 + num3))
+console.log(parseFloat(num2))
+console.log(parseInt(num2))
+console.log(Number(num2))
