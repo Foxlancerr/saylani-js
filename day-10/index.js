@@ -2,8 +2,8 @@ let body = document.querySelector("body");
 body.style.position = "relative";
 let div = document.createElement("div");
 div.style.position = "absolute";
-div.style.width = "50px";
-div.style.height = "50px";
+div.style.width = "20px";
+div.style.height = "20px";
 div.style.backgroundColor = "yellow";
 body.appendChild(div);
 
