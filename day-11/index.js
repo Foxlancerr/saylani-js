@@ -16,3 +16,30 @@ btn2.addEventListener("click", () => {
   btn2.innerText = "read less";
   para1.innerText = contents.substring(0, 50);
 });
+
+let zipCode = document.getElementById("zip");
+let cityPara = document.getElementById("displayCity");
+function cityFinder(_zipCode) {
+  switch (_zipCode) {
+    case "1":
+      city = "peshawar";
+      break;
+    case "2":
+      city = "karachi";
+      break;
+    case "3":
+      city = "Mardan";
+      break;
+    case "4":
+      city = "swat";
+      break;
+    case "5":
+      city = "swabi";
+      break;
+  }
+  return city;
+}
+
+btnCity.addEventListener("click", () => {
+ cityPara.innerText = cityFinder(zipCode.value)
+});
